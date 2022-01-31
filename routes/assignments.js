@@ -53,7 +53,7 @@ function postAssignment(req, res){
         if(err){
             res.send('cant post assignment ', err);
         }
-        res.json({ message: `New Assignment : ${assignment.name} saved!`})
+        res.json({ message: `New Assignment saved!`})
     })
 }
 
@@ -82,7 +82,7 @@ function deleteAssignment(req, res) {
             
             res.send(err);
         }else{
-        res.json({message: ` Assignment with the id = ${assignment.id} Deleted`});
+        res.json({message: ` Assignment Deleted Successfully`});
 
         }
     })
